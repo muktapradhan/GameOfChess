@@ -17,7 +17,7 @@ public class Game {
 		System.out.println("Enter cell number");
 		String cellDetails = System.console().readLine();
 		List<Cell> cells = getPossibleMoves(typeOfPiece, cellDetails);
-
+		System.out.println("Possible moves are:");
 		cells.forEach(System.out::println);
 		
 	}
